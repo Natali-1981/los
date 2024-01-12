@@ -1,0 +1,197 @@
+body{
+    max-width: 2000px;
+    width: 100%;
+    margin: auto;
+    background: url("./img/background1.png") no-repeat center;
+ height: 100%;
+ color: #29056d;
+ }
+ 
+ .header{
+     display: flex;
+     justify-content: space-around;
+     margin-top: 24px;
+     margin-bottom: 50px;
+ }
+ 
+ .menu-list{
+    display: flex;
+    list-style-type: none;
+       }
+ 
+    .menu-item:not(:last-child) {
+     margin-right: 63px;
+     }
+ 
+     /menu-item a {
+         text-decoration: none;
+         color: #e90c0c;
+     }
+ 
+     .active {
+         font-weight: bold;
+     }
+ 
+     .main-text {
+         font-weight: 500;
+         font-size: 53px;
+         line-height: 62px;
+     }
+ 
+     .quote {
+         font-weight: 400;
+         font-size: 18px;
+         line-height: 21px;
+         margin-left: 0;
+         opacity: 0.7;
+     }
+ 
+     .bitton-order{
+         all:unset;
+         padding: 22px 55px;
+         background: #0f05a8;
+         border-radius: 5px;
+         color: #3f3131;
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 19px;
+ 
+     }
+     #sidebar{
+        width: 200px; /* Ширина */
+       background: #149483; /* Фоновый цвет */
+        margin-bottom: 10px; /* Отступ снизу */
+        margin-left: 990px;
+        float: right; /* Обтекание справа */
+    }
+    #content{
+        
+        width: 990px; /* Ширина */
+        background: #0ccece; /* Фоновый цвет */
+       
+    }
+    .clear{
+        clear: both;
+      }
+
+     .main{
+       max-width: 500px;
+     }
+     .nav {
+        background: rgb(46, 252, 235);
+        text-align: center;
+        }
+        .nav a {
+        text-decoration: none;
+        display: block;
+        transition: .5s linear;
+        }
+        .nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        }
+        .topmenu > li {
+        display: inline-block;
+                position: relative;
+        width: 500px;
+        }
+        .topmenu > li > a {
+        font-weight: bold;
+        padding: 10px 30px;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #1c1c1c;
+        border: 1px solid #999;
+        }
+        .submenu {
+        position: absolute;
+        left: 10px;
+        z-index: 5;
+        width: 240px;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: .5s ease-in-out;
+        }
+        .submenu li {
+        position: relative;
+        border: 1px solid #999;
+        margin:2px;
+        }
+        .submenu a {
+        background: rgb(59, 253, 244);
+        color: #1c1c1c;
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding: 10px 20px;
+        }
+        .submenu .submenu {
+        position: absolute;
+        top: 0;
+        left: 200px;
+        }
+        .nav li:hover > .submenu {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0px);
+        }
+        
+        .full-styles .title,
+        .full-styles .subtitle {
+          font-family: "Merriweather", "Garamond", "Georgia", serif;
+        }
+        
+        .full-styles .title {
+          font-size: 2.15em;
+          color: #333;
+          margin-bottom: 4px;
+        }
+        
+        .full-styles .subtitle {
+          font-size: 0.85em;
+          font-family: "Lato", sans-serif;
+          font-weight: lighter;
+          color: #555;
+          margin-top: 0;
+        }
+        
+        .full-styles p {
+          font-family: "Lato", sans-serif;
+          line-height: 1.35;
+          color: #333;
+        }
+        
+        .full-styles .highlight-title {
+          font-weight: bold;
+        }
+        
+        .full-styles h1 {
+          margin-top: 8px;
+        }
+        
+        .container {
+          text-align: left;
+          padding: 0 8px;
+        }
+        
+        .demo-wrapper {
+          display: flex;
+          flex-direction: row;
+        }
+        
+        /* Decorative styles */
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+
+        @media screen and (min-width: X px){
+            selector{
+            property: value;
+            }
+            }
